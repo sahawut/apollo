@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+  <name>broker-service</name>
+  <comment>NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects>
+    <project>simulator-service-client</project>
+    <project>config-examples</project>
+    <project>services-common</project>
+    <project>xsd-types</project>
+    <project>simulator-service</project>
+    <project>db-common</project>
+    <project>data-service-client</project>
+    <project>data-service</project>
+    <project>library-service-client</project>
+    <project>library-service</project>
+    <project>visualizer-service-client</project>
+    <project>visualizer-service</project>
+    <project>syntheticpopulation-service-client</project>
+    <project>syntheticpopulation-service</project>
+    <project>translator-service-skeleton</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

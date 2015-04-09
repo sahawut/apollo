@@ -43,8 +43,9 @@ class SyntheticPopulationServiceImpl implements SyntheticPopulationServiceEI {
 	@WebMethod(action = "http://service.apollo.pitt.edu/syntheticpopulationservice/v3_0_0/runSyntheticPopulationGeneration")
 	@ResponseWrapper(localName = "runSyntheticPopulationGenerationResponse", targetNamespace = "http://service.apollo.pitt.edu/syntheticpopulationservice/v3_0_0/", className = "edu.pitt.apollo.service.syntheticpopulationservice.v3_0_0.RunSyntheticPopulationGenerationResponse")
 	public List<ServiceResult> runSyntheticPopulationGeneration(
-			@WebParam(name = "runSyntheticPopulationGenerationMessage", targetNamespace = "http://service.apollo.pitt.edu/syntheticpopulationservice/v3_0_0/") RunSyntheticPopulationGenerationMessage runSyntheticPopulationGenerationMessage) {
-		// TODO Auto-generated method stub
+		@WebParam(name = "runSyntheticPopulationGenerationMessage", targetNamespace = "http://service.apollo.pitt.edu/syntheticpopulationservice/v3_0_0/") RunSyntheticPopulationGenerationMessage runSyntheticPopulationGenerationMessage) {
+		System.out.println(runSyntheticPopulationGenerationMessage.toString());
+		
 		return null;
 	}
 
@@ -56,10 +57,10 @@ class SyntheticPopulationServiceImpl implements SyntheticPopulationServiceEI {
 	public MethodCallStatus getRunStatus(
 			@WebParam(name = "runId", targetNamespace = "http://service.apollo.pitt.edu/syntheticpopulationservice/v3_0_0/") BigInteger runId) {
 		// TODO Auto-generated method stub
+		System.out.println("Invoked getRunStatus");
+		
 		return null;
 	}
-
-
 
 	
 

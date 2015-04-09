@@ -15,8 +15,12 @@
 
 package edu.pitt.apollo.syntheticpopulationserviceclient;
 
+import java.math.BigInteger;
 import java.net.MalformedURLException;
 
+import edu.pitt.apollo.service.syntheticpopulationservice.v3_0_0.SyntheticPopulationServiceEI;
+import edu.pitt.apollo.service.syntheticpopulationservice.v3_0_0.SyntheticPopulationServiceV300;
+import edu.pitt.apollo.synthetic_population_service_types.v3_0_0.RunSyntheticPopulationGenerationMessage;
 
 public class WSClient {
 	public static void main(String[] args) throws MalformedURLException {
@@ -32,5 +36,13 @@ public class WSClient {
 //		RunStatus rs = port.getStatus("12497");
 //		System.out.println("Status Enum: " + rs.getStatus());
 //		System.out.println("Status Message: " + rs.getMessage());
+		
+		SyntheticPopulationServiceV300 syntheticPopulationService = new SyntheticPopulationServiceV300();
+		SyntheticPopulationServiceEI syntheticPopulationServiceEndpoint = syntheticPopulationService.getSyntheticPopulationServiceEndpoint();
+		
+		syntheticPopulationServiceEndpoint.runSyntheticPopulationGeneration();
+		syntheticPopulationServiceEndpoint.getRunStatus(BigInteger.ZERO);
+		
+		return;
 	}
 }

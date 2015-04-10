@@ -33,6 +33,14 @@
 		</sequence>
 	</complexType>
 
-	<complexType name="RunSyntheticPopulationGenerationMessage"></complexType>
+
+	<complexType name="RunSyntheticPopulationGenerationMessage">
+       <sequence>
+           <element name="boundaryIdType" type="string" minOccurs="1" maxOccurs="1"/>
+           <element name="boundaryId" type="integer" maxOccurs="unbounded" minOccurs="1"/>
+           <element name="variableIdType" type="string" minOccurs="1" maxOccurs="1"/>
+           <element name="variableId" type="integer" maxOccurs="unbounded" minOccurs="1"/>
+       </sequence>
+	</complexType>
 
 </schema>

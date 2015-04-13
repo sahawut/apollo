@@ -30,6 +30,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link SyntheticPopulationGenerationResult }
+     * 
+     */
+    public SyntheticPopulationGenerationResult createSyntheticPopulationGenerationResult() {
+        return new SyntheticPopulationGenerationResult();
+    }
+
+    /**
      * Create an instance of {@link GetConfigurationFileForSimulationResult }
      * 
      */
@@ -43,14 +51,6 @@ public class ObjectFactory {
      */
     public RunSyntheticPopulationGenerationMessage createRunSyntheticPopulationGenerationMessage() {
         return new RunSyntheticPopulationGenerationMessage();
-    }
-
-    /**
-     * Create an instance of {@link SyntheticPopulationGenerationResult }
-     * 
-     */
-    public SyntheticPopulationGenerationResult createSyntheticPopulationGenerationResult() {
-        return new SyntheticPopulationGenerationResult();
     }
 
 }

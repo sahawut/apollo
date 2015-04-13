@@ -30,14 +30,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RunSyntheticPopulationGenerationResponse }
-     * 
-     */
-    public RunSyntheticPopulationGenerationResponse createRunSyntheticPopulationGenerationResponse() {
-        return new RunSyntheticPopulationGenerationResponse();
-    }
-
-    /**
      * Create an instance of {@link GetRunStatusResponse }
      * 
      */
@@ -46,19 +38,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RunSyntheticPopulationGeneration }
-     * 
-     */
-    public RunSyntheticPopulationGeneration createRunSyntheticPopulationGeneration() {
-        return new RunSyntheticPopulationGeneration();
-    }
-
-    /**
      * Create an instance of {@link GetRunStatus }
      * 
      */
     public GetRunStatus createGetRunStatus() {
         return new GetRunStatus();
+    }
+
+    /**
+     * Create an instance of {@link RunSyntheticPopulationGenerationResponse }
+     * 
+     */
+    public RunSyntheticPopulationGenerationResponse createRunSyntheticPopulationGenerationResponse() {
+        return new RunSyntheticPopulationGenerationResponse();
+    }
+
+    /**
+     * Create an instance of {@link RunSyntheticPopulationGeneration }
+     * 
+     */
+    public RunSyntheticPopulationGeneration createRunSyntheticPopulationGeneration() {
+        return new RunSyntheticPopulationGeneration();
     }
 
 }

@@ -46,27 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UrlOutputResource }
-     * 
-     */
-    public UrlOutputResource createUrlOutputResource() {
-        return new UrlOutputResource();
-    }
-
-    /**
      * Create an instance of {@link SoftwareLicenseIdentification }
      * 
      */
     public SoftwareLicenseIdentification createSoftwareLicenseIdentification() {
         return new SoftwareLicenseIdentification();
-    }
-
-    /**
-     * Create an instance of {@link SoftwareIdentification }
-     * 
-     */
-    public SoftwareIdentification createSoftwareIdentification() {
-        return new SoftwareIdentification();
     }
 
     /**
@@ -78,11 +62,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Role }
+     * Create an instance of {@link SoftwareIdentification }
      * 
      */
-    public Role createRole() {
-        return new Role();
+    public SoftwareIdentification createSoftwareIdentification() {
+        return new SoftwareIdentification();
+    }
+
+    /**
+     * Create an instance of {@link ServiceResult }
+     * 
+     */
+    public ServiceResult createServiceResult() {
+        return new ServiceResult();
     }
 
     /**
@@ -94,11 +86,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TerminteRunResult }
+     * Create an instance of {@link UrlOutputResource }
      * 
      */
-    public TerminteRunResult createTerminteRunResult() {
-        return new TerminteRunResult();
+    public UrlOutputResource createUrlOutputResource() {
+        return new UrlOutputResource();
     }
 
     /**
@@ -110,19 +102,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RunIdentificationAndLabel }
+     * Create an instance of {@link TerminteRunResult }
      * 
      */
-    public RunIdentificationAndLabel createRunIdentificationAndLabel() {
-        return new RunIdentificationAndLabel();
-    }
-
-    /**
-     * Create an instance of {@link ServiceResult }
-     * 
-     */
-    public ServiceResult createServiceResult() {
-        return new ServiceResult();
+    public TerminteRunResult createTerminteRunResult() {
+        return new TerminteRunResult();
     }
 
     /**
@@ -139,6 +123,22 @@ public class ObjectFactory {
      */
     public ServiceRegistrationRecord createServiceRegistrationRecord() {
         return new ServiceRegistrationRecord();
+    }
+
+    /**
+     * Create an instance of {@link Role }
+     * 
+     */
+    public Role createRole() {
+        return new Role();
+    }
+
+    /**
+     * Create an instance of {@link RunIdentificationAndLabel }
+     * 
+     */
+    public RunIdentificationAndLabel createRunIdentificationAndLabel() {
+        return new RunIdentificationAndLabel();
     }
 
 }

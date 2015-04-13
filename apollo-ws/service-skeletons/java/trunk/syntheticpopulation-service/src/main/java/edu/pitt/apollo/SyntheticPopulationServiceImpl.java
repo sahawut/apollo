@@ -44,7 +44,12 @@ class SyntheticPopulationServiceImpl implements SyntheticPopulationServiceEI {
 	@ResponseWrapper(localName = "runSyntheticPopulationGenerationResponse", targetNamespace = "http://service.apollo.pitt.edu/syntheticpopulationservice/v3_0_0/", className = "edu.pitt.apollo.service.syntheticpopulationservice.v3_0_0.RunSyntheticPopulationGenerationResponse")
 	public List<ServiceResult> runSyntheticPopulationGeneration(
 		@WebParam(name = "runSyntheticPopulationGenerationMessage", targetNamespace = "http://service.apollo.pitt.edu/syntheticpopulationservice/v3_0_0/") RunSyntheticPopulationGenerationMessage runSyntheticPopulationGenerationMessage) {
-		System.out.println(runSyntheticPopulationGenerationMessage.toString());
+		System.out.println("\n" + runSyntheticPopulationGenerationMessage.toString());
+		System.out.println(runSyntheticPopulationGenerationMessage.getBoundaryId().toString());
+		System.out.println(runSyntheticPopulationGenerationMessage.getVariableId().toString());
+		System.out.print(runSyntheticPopulationGenerationMessage.getYear().intValue() + "/");
+		System.out.print(runSyntheticPopulationGenerationMessage.getMonth().intValue() + "/");
+		System.out.print(runSyntheticPopulationGenerationMessage.getDay().intValue() + "\n");
 		
 		return null;
 	}
